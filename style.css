@@ -1,0 +1,63 @@
+
+/*style pour le header garage*/
+
+.header {
+    background-color: #b9b5b5;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.6);
+}
+
+.logo-container {
+    display: flex;
+    align-items: center; 
+}
+
+.logo {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.banner-text {
+    text-align: center; 
+}
+
+.slogan {
+    font-size: 24px; 
+    font-family: 'Arial Black', sans-serif; 
+    margin: 0;
+    padding: 10px 0; 
+    color: rgb(0, 0, 0); 
+    text-transform: uppercase; 
+}
+
+.contact {
+    text-align: right;
+    padding-right: 10px;
+}
+
+.header p {
+    font-size: 16px;
+    margin: 0;
+    padding: 5px 0;
+    color: black;
+}
+
+.header a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+}
+
+/* Styles pour le contenu */
+
+
+
+
+
+
+

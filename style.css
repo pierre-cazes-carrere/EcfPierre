@@ -57,6 +57,7 @@
     border-bottom: 2px solid gold;
 }
 
+/* Fin de style pour le header garage */
 /* Style barre de menu */
 
 *{
@@ -100,5 +101,90 @@ nav ul::after {
     box-shadow: rgba(0, 0, 0, 0.06) 0px 2px 4px 0px inset;
  }
 
+ /* Fin de style pour barre de menu */
+/* Styles pour la section de présentation */
 
- 
+#presentation {
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+#presentation h2 {
+    font-size: 28px;
+    color: #333;
+}
+
+#presentation p {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.5;
+    margin: 10px 0;
+}
+
+/* Fin de style de présentation */
+ /* Styles pour l'image */
+
+.center-image {
+    display: block; 
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+/* Fin de style pour l'image */
+/* Styles pour la section des services */
+
+#services {
+    background-color: #f0f0f0;
+    padding: 30px;
+    text-align: center;
+}
+
+#services h2 {
+    font-size: 28px;
+    color: #333;
+    margin-top: -5px;
+}
+
+#services ul {
+    list-style: none;
+    padding: 0;
+}
+
+#services li {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 7px;
+}
+
+/* Fin de style pour la section des services */
+/* Styles pour les listes de services */
+
+.service-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.service-list li {
+    flex: 0 0 calc(33.33% - 20px);
+    margin-right: 20px;
+    text-align: left;
+}
+
+/* Fin de style pour les listes de services */
+/* Responsive design pour les listes de services */
+
+@media screen and (max-width: 768px) {
+    .service-list {
+        flex-direction: column;
+    }
+
+    .service-list li {
+        flex: 0 0 100%;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+}

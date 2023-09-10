@@ -1,3 +1,7 @@
+body {
+    padding: 20px;
+}
+
 /*style pour le header garage*/
 
 .header {
@@ -188,3 +192,26 @@ nav ul::after {
         margin-bottom: 10px;
     }
 }
+  
+/* Fin de Responsive design pour les listes de services */
+/* Styles pour le footer */
+
+footer {
+    background-color: #f0f0f0;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+footer p {
+    margin: 10px 0;
+    color: #666;
+}
+
+/* Fin de style pour le footer */

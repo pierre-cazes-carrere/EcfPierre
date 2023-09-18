@@ -9,11 +9,15 @@ document.addEventListener("DOMContentLoaded", function () {
       const kilometrageFiltre = kilometrageSelect.value;
       const prixFiltre = prixSelect.value;
   
+      console.log("Filtre kilometrage;", kilometrageFiltre);
+  
       vehicules.forEach(function (vehicule) {
         const anneeVehicule = vehicule.querySelector(".annee").textContent.split(": ")[1];
-        const kilometrageVehicule = vehicule.querySelector(".kilometre").textContent.split(": ")[1];
+        const kilometrageVehicule = vehicule.querySelector(".kilometrage").textContent.split(": ")[1].replace(/ /g, ''); // Supprimer les espaces
         const prixFichuVehicule = vehicule.querySelector(".prix").textContent.split(": ")[1].replace("€", "").replace(/ /g, "");
         const prixFichu = parseFloat(prixFichuVehicule);
+  
+        console.log("Kilométrage du véhicule:", kilometrageVehicule);
   
         const doitAfficher = (anneeFiltre === "toutes" || anneeVehicule === anneeFiltre) &&
           (kilometrageFiltre === "tous" || (kilometrageFiltre === "moins-50000" && parseFloat(kilometrageVehicule) < 50000) ||
@@ -30,7 +34,7 @@ document.addEventListener("DOMContentLoaded", function () {
         if (doitAfficher) {
           vehicule.style.display = "block";
         } else {
-          vehicule.style.display = "none";
+            vehicule.style.display = "none";
         }
       });
     }
@@ -40,5 +44,6 @@ document.addEventListener("DOMContentLoaded", function () {
     prixSelect.addEventListener("change", filtrerVehicules);
   });
   
-
+  
+  
 

@@ -82,7 +82,7 @@ nav ul::after {
 }
  nav li {
     float: left;
-    width: 25%;
+    width: 20%;
     text-align: center;
  }
 
@@ -107,7 +107,7 @@ nav ul::after {
 
  /* Fin de style pour barre de menu */
  /* Styles pour la page container */
- 
+
 .container-text {
     max-width: 800px; 
     margin: 0 auto;

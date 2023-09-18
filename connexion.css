@@ -2,7 +2,6 @@ body {
     padding: 20px;
 }
 
-
 /*style pour le header garage*/
 
 .header {
@@ -107,79 +106,47 @@ nav ul::after {
  }
 
  /* Fin de style pour barre de menu */
- /* Styles pour les filtres de recherche */
-
-.filter-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 20px;
-    text-align: center;
+ /* Styles pour le formulaire de connexion */
+form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 100px;
 }
 
-.filter {
-    margin: 15px;
-}
-
-.filter label {
+/* Styles pour les étiquettes des champs */
+label {
     display: block;
     font-weight: bold;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
 }
 
-.filter select {
-    padding: 8px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    font-size: 14px;
-    width: 150px; 
-    max-width: 100%;
-}
-
- /* Fin de styles pour les filtres de recherche */
- /* Style pour le h1 */
-
-h1 {
-    text-align: center;
-    padding: 20px;
-}
-
- /* Fin de styles pour le h1 */
- /* Styles pour la grille de véhicules */
-
- .row {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between; 
-}
-
-
-.vehicule {
-    width: 30%;
-    float: left;
-    margin: 10px;
-    margin-bottom: 80px;
+/* Styles pour les champs de saisie */
+input[type="email"],
+input[type="password"] {
+    width: 100%;
     padding: 10px;
+    margin-bottom: 15px;
     border: 1px solid #ccc;
-    text-align: center;
-    box-shadow: rgba(67, 71, 85, 0.27) 0px 0px 0.25em, rgba(90, 125, 188, 0.05) 0px 0.25em 1em;
-    
+    border-radius: 5px;
+    font-size: 16px;
 }
 
-.vehicule img {
-    max-width: 370px;
-    height: 200px; 
-}
-
-.vehicule h2 {
+/* Styles pour le bouton de soumission */
+input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
     font-size: 18px;
-    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
 }
 
-.vehicule p {
-    font-size: 14px;
-    margin: 5px 0;
+input[type="submit"]:hover {
+    background-color: #0056b3;
 }
- /* Fin de styles pour la grille de véhicules */
-
-

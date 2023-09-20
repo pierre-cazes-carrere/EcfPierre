@@ -1,0 +1,23 @@
+# fly.toml app configuration file generated for broken-lake-3281 on 2023-09-19T20:20:21+02:00
+#
+# See https://fly.io/docs/reference/configuration/ for information about how to use this file.
+#
+
+app = "broken-lake-3281"
+primary_region = "cdg"
+
+[[builds]]
+  image = "riep13/broken-lake-3281:latest" 
+  builder = "heroku/buildpacks:20"
+
+[build.env]
+  GO111MODULE = "on"
+  FLY_ENV = "true"
+
+[http_service]
+  internal_port = 8080
+  force_https = true
+  auto_stop_machines = true
+  auto_start_machines = true
+  min_machines_running = 0
+  processes = ["app"]

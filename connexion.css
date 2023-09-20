@@ -2,6 +2,13 @@ body {
     padding: 20px;
 }
 
+/* Styles pour les écrans de taille moyenne */
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+}
+
 /*style pour le header garage*/
 
 .header {
@@ -62,6 +69,34 @@ body {
 }
 
 /* Fin de style pour le header garage */
+
+/* Styles pour les écrans de taille moyenne  */
+@media screen and (max-width: 768px) {
+    .header {
+        flex-direction: column; 
+        text-align: center; 
+    }
+    
+    .logo {
+        width: 80px;
+        height: 80px;
+        margin-bottom: 10px;
+    }
+    
+    .slogan {
+        font-size: 20px;
+    }
+    
+    .contact {
+        text-align: center;
+        padding-right: 0;
+    }
+    
+    .header p {
+        font-size: 14px;
+    }
+}
+
 /* Style barre de menu */
 
 *{
@@ -106,6 +141,7 @@ nav ul::after {
  }
 
  /* Fin de style pour barre de menu */
+
  /* Styles pour le formulaire de connexion */
 form {
     max-width: 400px;

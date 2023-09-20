@@ -2,6 +2,17 @@ body {
     padding: 20px;
 }
 
+/* Styles pour les écrans de taille moyenne */
+@media screen and (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
 
 /*style pour le header garage*/
 
@@ -63,6 +74,34 @@ body {
 }
 
 /* Fin de style pour le header garage */
+
+/* Styles pour les écrans de taille moyenne  */
+@media screen and (max-width: 768px) {
+    .header {
+        flex-direction: column; 
+        text-align: center; 
+    }
+    
+    .logo {
+        width: 80px;
+        height: 80px;
+        margin-bottom: 10px;
+    }
+    
+    .slogan {
+        font-size: 20px;
+    }
+    
+    .contact {
+        text-align: center;
+        padding-right: 0;
+    }
+    
+    .header p {
+        font-size: 14px;
+    }
+}
+
 /* Style barre de menu */
 
 *{
@@ -167,8 +206,11 @@ h1 {
 }
 
 .vehicule img {
-    max-width: 370px;
-    height: 200px; 
+    display: block; 
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 .vehicule h2 {
